@@ -2,10 +2,11 @@ function renderCartItem(item) {
     const product = item;
 
     // Задание №3.1. Формирование строки корзины
-    product = {id: id, title: title, count: count, price: price};
-    let itemCountText = '';
+        let itemCountText = '';
+        let count = product;
+        let price = product;
     //let sum = count * price;
-    itemCountText = `${itemCountText,count} "x" ${itemCountText,price} "₽ =" ${itemCountText, count × price} + "₽"`;
+    itemCountText = `${product.count} × ${product.price} ₽ = ${product.count * product.price} ₽`;
     
    
 
